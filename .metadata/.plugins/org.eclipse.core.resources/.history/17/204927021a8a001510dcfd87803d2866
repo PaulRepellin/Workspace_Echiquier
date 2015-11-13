@@ -1,0 +1,10 @@
+package observable;
+
+import java.util.Observer;
+
+public interface ChessGameObservable {
+	public void notify(){
+		
+	}
+	public void addObserver(Observer o);
+}

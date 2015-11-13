@@ -1,0 +1,43 @@
+package observable;
+
+import java.util.Observable;
+
+public class ChessGame extends Observable{
+	Echiquier echiquier;
+	
+	
+	public ChessGame() {
+		super();
+		// TODO Auto-generated constructor stub
+		this.echiquier=new Echiquier();
+		
+	}
+	public String toString()
+	{
+		return echiquier.toString();
+	}
+	public boolean move (int xInit, int yInit, int xFinal, int yFinal)
+	{
+		boolean isMoveDone=false;
+		if(echiquier.isMoveOk(xInit, yInit, xFinal, yFinal))
+		{
+			isMoveDone=echiquier.move(xInit, yInit, xFinal, yFinal);
+			echiquier.switchJoueur();
+		}
+		return isMoveDone;
+	}
+	public boolean isEnd()
+	{
+		return echiquier.isEnd();
+	}
+	public String getMessage()
+	{
+		return echiquier.getMessage();
+	}
+	public Couleur getColorCurrentPlayer()
+	{
+		return echiquier.getColorCurrentPlayer();
+	}
+
+
+}

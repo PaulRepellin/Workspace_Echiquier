@@ -1,0 +1,17 @@
+package controler.controlerLocal;
+
+import model.observable.ChessGame;
+
+public class ChessGameControler implements ChessGameControlers{
+	ChessGame chessgame;
+
+	public ChessGameControler(ChessGame chessgame) {
+		super();
+		this.chessgame = chessgame;
+	}
+
+
+	
+	
+
+}

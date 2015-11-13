@@ -1,0 +1,44 @@
+package controler.controlerLocal;
+
+import model.Coord;
+import model.Couleur;
+import model.observable.ChessGame;
+
+public class ChessGameControler implements ChessGameControlers{
+	ChessGame chessgame;
+
+	public ChessGameControler(ChessGame chessgame) {
+		super();
+		this.chessgame = chessgame;
+	}
+
+	@Override
+	public boolean move(Coord initCoord, Coord finalCoord) {
+		// TODO Auto-generated method stub
+		return chessgame.move(initCoord.x, initCoord.y, finalCoord.x, finalCoord.y);
+	}
+
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return chessgame.getMessage();
+	}
+
+	@Override
+	public boolean isEnd() {
+		// TODO Auto-generated method stub
+		return chessgame.isEnd();
+	}
+
+	@Override
+	public Couleur getColorCurrentPlayer() {
+		// TODO Auto-generated method stub
+		return chessgame.getColorCurrentPlayer();
+	}
+
+
+
+	
+	
+
+}

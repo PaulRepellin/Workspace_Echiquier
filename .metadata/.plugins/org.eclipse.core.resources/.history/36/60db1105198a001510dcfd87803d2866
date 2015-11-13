@@ -1,0 +1,24 @@
+package model;
+
+public class ChessGame {
+	Echiquier echiquier;
+	
+	
+	public ChessGame() {
+		super();
+		// TODO Auto-generated constructor stub
+		this.echiquier=new Echiquier();
+		
+	}
+	public String toString(); 
+	public boolean move (int xInit, int yInit, int xFinal, int yFinal)
+	{
+		if(echiquier.isMoveOk(xInit, yInit, xFinal, yFinal))
+			return echiquier.move(xInit, yInit, xFinal, yFinal);
+		return false;
+	}
+	public boolean isEnd();
+	public String getMessage();
+	public Couleur getColorCurrentPlayer(); 
+
+}

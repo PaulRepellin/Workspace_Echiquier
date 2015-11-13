@@ -5,7 +5,7 @@ import model.Coord;
 import model.observable.ChessGame;
 
 
-
+ 
 /**
  * @author francoise.perrin
  * Inspiration Jacques SARAYDARYAN, Adrien GUENARD *
