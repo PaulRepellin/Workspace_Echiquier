@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="model.Echiquier"/>
+<fullyQualifiedTypeName name="java.util.Observer"/>
+<fullyQualifiedTypeName name="model.ChessGame"/>
+<fullyQualifiedTypeName name="model.observable.ChessGame"/>
+<fullyQualifiedTypeName name="controler.controlerLocal.ChessGameControlers"/>
+</qualifiedTypeNameHistroy>
